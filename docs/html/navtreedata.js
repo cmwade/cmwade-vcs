@@ -25,6 +25,7 @@
 var NAVTREE =
 [
   [ "VCS", "index.html", [
+    [ "Get Started Guide", "index.html", null ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],
@@ -47,7 +48,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"VCS_8h.html"
+"_v_c_s_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

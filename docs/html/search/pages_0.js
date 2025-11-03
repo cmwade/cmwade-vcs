@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['cmwade_20vcs_0',['cmwade-vcs',['../md__r_e_a_d_m_e.html',1,'']]]
+  ['get_20started_20guide_0',['Get Started Guide',['../index.html',1,'']]],
+  ['guide_1',['Get Started Guide',['../index.html',1,'']]]
 ];
