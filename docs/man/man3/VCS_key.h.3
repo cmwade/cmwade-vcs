@@ -1,0 +1,51 @@
+.TH "include/VCS_key.h" 3 "Version 0.0.1" "VCS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+include/VCS_key.h
+.SH SYNOPSIS
+.br
+.PP
+\fR#include 'SDL3/SDL\&.h'\fP
+.br
+\fR#include 'SDL3/SDL_scancode\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "const bool * \fBVCS_key_states\fP ()"
+.br
+.ti -1c
+.RI "int \fBVCS_is_key_pressed\fP (int scancode)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "int VCS_is_key_pressed (int scancode)"
+Query whether a specific key is pressed, using its scancode\&. The scancodes used are identical to those used by SDL3; reference \fRThe SDL3 page on scancodes\fP for the keys\&. VCS includes SDL3, so the SDL_Scancode enum is also available\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIscancode\fP The scancode of the key to check 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Returns whether the specified key is pressed as a bool\&. 
+.RE
+.PP
+
+.SS "const bool * VCS_key_states ()"
+Returns an array of bools indexed by scancode, where array[scancode] == true means that key is pressed\&. The scancodes used are identical to those used by SDL3; reference \fRThe SDL3 page on scancodes\fP for the keys\&. VCS includes SDL3, so the SDL_Scancode enum is also available\&. 
+.PP
+\fBReturns\fP
+.RS 4
+An array of bools indexed by scancodes 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for VCS from the source code\&.
