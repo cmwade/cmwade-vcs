@@ -4,6 +4,7 @@
 #include "VCS_renderpanel.h"
 #include "VCS_info.h"
 #include "VCS_SDL3.h"
+#include "VCS_key.h"
 
 /**
  * \mainpage Get Started Guide

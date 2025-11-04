@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>VCS: include Directory Reference</title>
+<title>VCS: include/VCS_key.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(function(){initNavTree('dir_d44c64559bbebec7f509842c48db8b23.html','',''); });
+$(function(){initNavTree('VCS__key_8h.html','',''); });
 </script>
 <div id="container">
 <div id="doc-content">
@@ -89,19 +89,62 @@ $(function(){initNavTree('dir_d44c64559bbebec7f509842c48db8b23.html','',''); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">include Directory Reference</div></div>
+  <div class="headertitle"><div class="title">VCS_key.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><code>#include &quot;SDL3/SDL.h&quot;</code><br />
+<code>#include &quot;SDL3/SDL_scancode.h&quot;</code><br />
+</div>
+<p><a href="VCS__key_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-files" class="groupheader"><a id="files" name="files"></a>
-Files</h2></td></tr>
-<tr class="memitem:VCS_2Eh" id="r_VCS_2Eh"><td class="memItemLeft" align="right" valign="top"><a href="VCS_8h_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="VCS_8h.html">VCS.h</a></td></tr>
-<tr class="memitem:VCS_5Fdynchar_2Eh" id="r_VCS_5Fdynchar_2Eh"><td class="memItemLeft" align="right" valign="top"><a href="VCS__dynchar_8h_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="VCS__dynchar_8h.html">VCS_dynchar.h</a></td></tr>
-<tr class="memitem:VCS_5Finfo_2Eh" id="r_VCS_5Finfo_2Eh"><td class="memItemLeft" align="right" valign="top"><a href="VCS__info_8h_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="VCS__info_8h.html">VCS_info.h</a></td></tr>
-<tr class="memitem:VCS_5Fkey_2Eh" id="r_VCS_5Fkey_2Eh"><td class="memItemLeft" align="right" valign="top"><a href="VCS__key_8h_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="VCS__key_8h.html">VCS_key.h</a></td></tr>
-<tr class="memitem:VCS_5Frenderpanel_2Eh" id="r_VCS_5Frenderpanel_2Eh"><td class="memItemLeft" align="right" valign="top"><a href="VCS__renderpanel_8h_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="VCS__renderpanel_8h.html">VCS_renderpanel.h</a></td></tr>
-<tr class="memitem:VCS_5FSDL3_2Eh" id="r_VCS_5FSDL3_2Eh"><td class="memItemLeft" align="right" valign="top"><a href="VCS__SDL3_8h_source.html"><span class="icondoc"><div class="doc-icon"></div></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="VCS__SDL3_8h.html">VCS_SDL3.h</a></td></tr>
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a5ab858b0049c3a310aea3dcfeb6886e4" id="r_a5ab858b0049c3a310aea3dcfeb6886e4"><td class="memItemLeft" align="right" valign="top">const bool *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ab858b0049c3a310aea3dcfeb6886e4">VCS_key_states</a> ()</td></tr>
+<tr class="memitem:a2061829cb6843f237110e7616ac74bc3" id="r_a2061829cb6843f237110e7616ac74bc3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2061829cb6843f237110e7616ac74bc3">VCS_is_key_pressed</a> (int scancode)</td></tr>
 </table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="a2061829cb6843f237110e7616ac74bc3" name="a2061829cb6843f237110e7616ac74bc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2061829cb6843f237110e7616ac74bc3">&#9670;&#160;</a></span>VCS_is_key_pressed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int VCS_is_key_pressed </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>scancode</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Query whether a specific key is pressed, using its scancode. The scancodes used are identical to those used by SDL3; reference <a href="https://wiki.libsdl.org/SDL3/SDL_Scancode">The SDL3 page on scancodes</a> for the keys. VCS includes SDL3, so the SDL_Scancode enum is also available. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">scancode</td><td>The scancode of the key to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns whether the specified key is pressed as a bool. </dd></dl>
+
+</div>
+</div>
+<a id="a5ab858b0049c3a310aea3dcfeb6886e4" name="a5ab858b0049c3a310aea3dcfeb6886e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ab858b0049c3a310aea3dcfeb6886e4">&#9670;&#160;</a></span>VCS_key_states()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const bool * VCS_key_states </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns an array of bools indexed by scancode, where array[scancode] == true means that key is pressed. The scancodes used are identical to those used by SDL3; reference <a href="https://wiki.libsdl.org/SDL3/SDL_Scancode">The SDL3 page on scancodes</a> for the keys. VCS includes SDL3, so the SDL_Scancode enum is also available. </p><dl class="section return"><dt>Returns</dt><dd>An array of bools indexed by scancodes </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">
@@ -115,7 +158,7 @@ Files</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>
+    <li class="navelem"><a href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a href="VCS__key_8h.html">VCS_key.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

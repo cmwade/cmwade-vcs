@@ -23,7 +23,7 @@ int main() {
   VCS_rp_set(info.rp, 2, 3, VCS_make_dynchar('S',VCS_whiteshader,VCS_blackshader,NULL,NULL));
   VCS_rp_set(info.rp, 2, 2, VCS_make_dynchar('+',blinkblueshader,VCS_blackshader,(void*)&ticks,NULL));
 
-  while (VCS_update(&info)) {
+  while (VCS_update(&info) && !VCS_is_key_pressed(SDL_SCANCODE_Q)) {
     ticks++;
     VCS_render(&info);
   }
